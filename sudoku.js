@@ -4,6 +4,13 @@
  * Договорись со своей командой, в каком формате возвращать этот результат.
  */
 function solve(boardString) {
+  let arr = boardString.split("");
+  const res = [];
+  while (arr.length > 0) {
+    const chunk = arr.splice(0, 9);
+    res.push(chunk);
+  }
+  return res;
 }
 
 /**
@@ -11,8 +18,7 @@ function solve(boardString) {
  * Возвращает булевое значение — решено это игровое поле или нет.
  */
 function isSolved(board) {
-1
-
+  1;
 }
 
 /**
@@ -20,9 +26,7 @@ function isSolved(board) {
  * Возвращает строку с игровым полем для последующего вывода в консоль.
  * Подумай, как симпатичнее сформировать эту строку.
  */
-function prettyBoard(board) {
-
-}
+function prettyBoard(board) {}
 
 // Экспортировать функции для использования в другом файле (например, readAndSolve.js).
 module.exports = {
